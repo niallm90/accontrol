@@ -2,7 +2,16 @@
 <resources>
 
     <string name="app_name">ACControl</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    
+    <string name="button_ac">AC</string>
+    <string name="temperature_celcius">°</string>
+    <string name="button_temperature_down">Down</string>
+    <string name="button_temperature_up">Up</string>
+    <string name="button_windscreen_blower">Windscreen Blower</string>
+    <string name="button_windscreen_heater">Windscreen Heater</string>
+    <string name="button_windscreen_recirculate">Recirculate Air</string>
+    <string name="mode_automatic">Auto</string>
+    <string name="mode_compressor">Compressor</string>
+    <string name="button_auto">Auto</string>
 </resources>

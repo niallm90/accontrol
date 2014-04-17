@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.niallm90.accontrol.MainActivity$PlaceholderFragment" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCompressor"
+            android:layout_centerHorizontal="true"
+            android:text="@string/temperature_celcius"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="120sp" />
+
+        <TextView
+            android:id="@+id/textCompressor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textTemperature"
+            android:text="@string/mode_compressor"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/toggleAc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="0dp"
+                android:textOff="@string/button_ac"
+                android:textOn="@string/button_ac"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleAuto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:height="0dp"
+       			android:layout_weight="1"
+                android:textOff="@string/button_auto"
+                android:textOn="@string/button_auto"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="fill_parent"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonTemperatureUp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:height="0dp"
+       			android:layout_weight="1"
+                android:text="@string/button_temperature_up"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonTemperatureDown"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:height="0dp"
+       			android:layout_weight="1"
+                android:text="@string/button_temperature_down"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ToggleButton
+            android:id="@+id/toggleWindscreenHeater"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:textOff="@string/button_windscreen_heater"
+            android:textOn="@string/button_windscreen_heater"
+            android:textSize="18sp"
+       	 	android:height="80dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleRecirculateAir"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:textOff="@string/button_windscreen_recirculate"
+            android:textOn="@string/button_windscreen_recirculate"
+            android:textSize="18sp"
+       	 	android:height="80dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleWindscreenBlower"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:textOff="@string/button_windscreen_blower"
+            android:textOn="@string/button_windscreen_blower"
+            android:textSize="18sp"
+       	 	android:height="80dp" />
+    </LinearLayout>
+</LinearLayout>
